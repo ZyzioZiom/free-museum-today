@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Free Museum Today</title>
+    <meta name="description" content="What can you visit for free today?">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body style="background: #333; color: #eee;">
+    <style>
+      a {
+        color: #01ff80;
+      }
+    </style>
+    <div class="col-md-12">
+      <h1>Today is <span id="current_day">the day!</span></h1>
+      <p>You can visit for free:</p>
+
+      <div id="Monday" style="display: none;">
+        <h2>Archeological Museum - St Adalbert church underground</h2>
+        <p>Main Square</p>
+        <p>10:00 - 16:00</p>
+        <p><a href="https://www.google.pl/maps/place/Church+of+St.+Wojciech/@50.0625614,19.9448085,15z/data=!4m6!1m3!3m2!1s0x0:0xa5751e101b1b22ae!2sArmia+Krajowa+Museum+in+Krak%C3%B3w!3m1!1s0x0000000000000000:0xdb733a1b34996d91">Navigate with Google Maps</a></p>
+        <hr/>
+
+        <h2>Eagle Pharmacy</h2>
+        <p>Pharmacy at Krakow Ghetto</p>
+        <p>10:00 - 14:00</p>
+        <p><a href="https://www.google.pl/maps/place/Apteka+pod+Or%C5%82em.+Oddzia%C5%82+Muzeum+Historycznego+Miasta+Krakowa/@50.0462274,19.9543165,20z/data=!4m2!3m1!1s0x0000000000000000:0xebbb94f29951b146">Navigate with Google Maps</a></p>
+        <hr/>
+
+        <h2>Schindler's Factory</h2>
+        <p>Known from famous Seven Spielberg movie - Schindler's List</p>
+        <p>10:00 - 14:00</p>
+        <p><a href="https://www.google.pl/maps/place/Schindlers+fabrik/@50.0474505,19.9620149,18.5z/data=!4m2!3m1!1s0x0000000000000000:0xadffc9ce2858e999">Navigate with Google Maps</a></p>
+        <hr/>
+
+        <h2>Old Synagogue</h2>
+        <p>History of Jewish people in Krakow</p>
+        <p>10:00 - 14:00</p>
+        <p><a href="https://www.google.pl/maps/place/Old+Synagogue/@50.0513164,19.9477258,17.75z/data=!4m6!1m3!3m2!1s0x0000000000000000:0xebbb94f29951b146!2sApteka+pod+Or%C5%82em.+Oddzia%C5%82+Muzeum+Historycznego+Miasta+Krakowa!3m1!1s0x0000000000000000:0x4e0ac004af65db44">Navigate with Google Maps</a></p>
+        <hr/>
+
+        <h2>Wawel Castle</h2>
+        <p>Residence of Polish kings</p>
+        <p>9:30 - 13:00</p>
+        <p><a href="https://www.google.pl/maps/place/Wawel+Royal+Castle/@50.0543034,19.9370247,17z/data=!4m6!1m3!3m2!1s0x0000000000000000:0xebbb94f29951b146!2sApteka+pod+Or%C5%82em.+Oddzia%C5%82+Muzeum+Historycznego+Miasta+Krakowa!3m1!1s0x0000000000000000:0xacb9dfc4d67fa598">Navigate with Google Maps</a></p>
+        <hr/>
+
+        <h2>Museum of Amber</h2>
+        <p>Everyday free</p>
+        <p>09:00 - 21:00</p>
+        <p><a href="https://www.google.pl/maps/place/Muzeum+Bursztynu/@50.062712,19.9380735,15z/data=!4m2!3m1!1s0x0:0xe1a172a494d46c8">Navigate with Google Maps</a></p>
+        <hr/>
+      </div>
+
+      <div id="Tuesday" style="display: none;">
+
+        <h2>Main Square underground</h2>
+        <p>Prior reservation required</p>
+        <p>10:00 - 16:00</p>
+        <p><a href="https://www.google.pl/maps/place/Rynek+Underground/@50.0616796,19.9372782,17z/data=!3m1!4b1!4m2!3m1!1s0x47165b1208c81111:0xa52ade5a014fe7a3">Navigate with Google Maps</a></p>
+        <hr/>
+
+        <h2>MOCAK Contemporary Art</h2>
+        <p>until 18:00</p>
+        <p><a href="https://www.google.pl/maps/place/Muzeum+Sztuki+Wsp%C3%B3%C5%82czesnej+w+Krakowie+MOCAK/@50.0470852,19.9617079,18z/data=!4m2!3m1!1s0x0000000000000000:0x2bdeb376a4caab16">Navigate with Google Maps</a></p>
+        <hr/>
+
+        <h2>Polish Aviation Museum</h2>
+        <p>9:00 - 19:00</p>
+        <p><a href="https://www.google.pl/maps/place/Polish+Aviation+Museum/@50.0812238,19.9882402,16.5z/data=!4m2!3m1!1s0x0000000000000000:0x5825382da80aa7f3">Navigate with Google Maps</a></p>
+        <hr/>
+
+        <h2>Wawel Castle Cathedral</h2>
+        <p>Residence of Polish kings</p>
+        <p>9:00 - 17:00</p>
+        <p><a href="https://www.google.pl/maps/place/Wawel+Cathedral/@50.0540769,19.9363615,17.25z/data=!4m2!3m1!1s0x0000000000000000:0x78fcde3f69ad7627">Navigate with Google Maps</a></p>
+        <hr/>
+
+        <h2>Museum of Amber</h2>
+        <p>Everyday free</p>
+        <p>09:00 - 21:00</p>
+        <p><a href="https://www.google.pl/maps/place/Muzeum+Bursztynu/@50.062712,19.9380735,15z/data=!4m2!3m1!1s0x0:0xe1a172a494d46c8">Navigate with Google Maps</a></p>
+        <hr/>
+      </div>
+
+      <div id="Wednesday" style="display: none;">
+
+        <h2>Nowa Huta Historical Museum</h2>
+        <p>Perfect district created by communist government</p>
+        <p>10:00 - 17:00</p>
+        <p><a href="https://www.google.pl/maps/place/Dzieje+Nowej+Huty.+Oddzia%C5%82+Muzeum+Historycznego+Miasta+Krakowa/@50.0646577,20.0355644,13z/data=!4m5!1m2!2m1!1smuzeum+nowa+huta!3m1!1s0x471645139036a01b:0xc05c7a388ba5b6c1">Navigate with Google Maps</a></p>
+        <hr/>
+
+        <h2>Wawel Castle Cathedral</h2>
+        <p>Residence of Polish kings</p>
+        <p>9:00 - 17:00</p>
+        <p><a href="https://www.google.pl/maps/place/Wawel+Cathedral/@50.0540769,19.9363615,17.25z/data=!4m2!3m1!1s0x0000000000000000:0x78fcde3f69ad7627">Navigate with Google Maps</a></p>
+        <hr/>
+
+        <h2>Museum of Amber</h2>
+        <p>Everyday free</p>
+        <p>09:00 - 21:00</p>
+        <p><a href="https://www.google.pl/maps/place/Muzeum+Bursztynu/@50.062712,19.9380735,15z/data=!4m2!3m1!1s0x0:0xe1a172a494d46c8">Navigate with Google Maps</a></p>
+        <hr/>
+      </div>
+
+      <div id="Thursday" style="display: none;">
+
+        <h2>Wawel Castle Cathedral</h2>
+        <p>Residence of Polish kings</p>
+        <p>9:00 - 17:00</p>
+        <p><a href="https://www.google.pl/maps/place/Wawel+Cathedral/@50.0540769,19.9363615,17.25z/data=!4m2!3m1!1s0x0000000000000000:0x78fcde3f69ad7627">Navigate with Google Maps</a></p>
+        <hr/>
+
+        <h2>Museum of Amber</h2>
+        <p>Everyday free</p>
+        <p>09:00 - 21:00</p>
+        <p><a href="https://www.google.pl/maps/place/Muzeum+Bursztynu/@50.062712,19.9380735,15z/data=!4m2!3m1!1s0x0:0xe1a172a494d46c8">Navigate with Google Maps</a></p>
+        <hr/>
+      </div>
+
+      <div id="Friday" style="display: none;">
+
+        <h2>Wawel Castle Cathedral</h2>
+        <p>Residence of Polish kings</p>
+        <p>9:00 - 17:00</p>
+      <p><a href="https://www.google.pl/maps/place/Wawel+Cathedral/@50.0540769,19.9363615,17.25z/data=!4m2!3m1!1s0x0000000000000000:0x78fcde3f69ad7627">Navigate with Google Maps</a></p>
+        <hr/>
+
+        <h2>Museum of Amber</h2>
+        <p>Everyday free</p>
+        <p>09:00 - 21:00</p>
+        <p><a href="https://www.google.pl/maps/place/Muzeum+Bursztynu/@50.062712,19.9380735,15z/data=!4m2!3m1!1s0x0:0xe1a172a494d46c8">Navigate with Google Maps</a></p>
+        <hr/>
+      </div>
+
+      <div id="Saturday" style="display: none;">
+
+        <h2>Wawel Castle Cathedral</h2>
+        <p>Residence of Polish kings</p>
+        <p>9:00 - 17:00</p>
+        <p><a href="https://www.google.pl/maps/place/Wawel+Cathedral/@50.0540769,19.9363615,17.25z/data=!4m2!3m1!1s0x0000000000000000:0x78fcde3f69ad7627">Navigate with Google Maps</a></p>
+        <hr/>
+
+        <h2>Museum of Amber</h2>
+        <p>Everyday free</p>
+        <p>09:00 - 21:00</p>
+        <p><a href="https://www.google.pl/maps/place/Muzeum+Bursztynu/@50.062712,19.9380735,15z/data=!4m2!3m1!1s0x0:0xe1a172a494d46c8">Navigate with Google Maps</a></p>
+        <hr/>
+      </div>
+
+      <div id="Sunday" style="display: none;">
+
+        <h2>Arsenał - National Museum of Czartoryski</h2>
+        <p>10:00 - 16:00</p>
+        <p><a href="https://www.google.pl/maps/place/Muzeum+XX.+Czartoryskich+w+Krakowie/@50.0647315,19.940363,17.5z/data=!4m2!3m1!1s0x0000000000000000:0x360b5554dfad8be8">Navigate with Google Maps</a></p>
+        <hr/>
+
+        <h2>Jan Matejko house</h2>
+        <p>One of the most famous Polish painters</p>
+        <p>10:00 - 16:00</p>
+        <p><a href="https://www.google.pl/maps/place/Jan+Matejko+House/@50.0632949,19.9405022,18z/data=!4m2!3m1!1s0x0000000000000000:0x2686c1a5396f5284">Navigate with Google Maps</a></p>
+        <hr/>
+
+        <h2>Joseph Mehoffer house</h2>
+        <p>10:00 - 16:00</p>
+        <p><a href="https://www.google.pl/maps/place/Muzeum+Narodowe+w+Krakowie+Dom+J%C3%B3zefa+Mehoffera/@50.0633235,19.9283879,17z/data=!3m1!4b1!4m2!3m1!1s0x0000000000000000:0xb27852af87fa3657">Navigate with Google Maps</a></p>
+        <hr/>
+
+        <h2>Archeological Museum</h2>
+        <p>10:00 - 14:00</p>
+        <p><a href="https://www.google.pl/maps/place/Muzeum+Archeologiczne+w+Krakowie/@50.0585711,19.9375288,17z/data=!4m2!3m1!1s0x0000000000000000:0x87c362056d52fbe2">Navigate with Google Maps</a></p>
+        <hr/>
+
+        <h2>National Army Museum</h2>
+        <p>Underground Polish army during World War II</p>
+        <p>11:00 - 18:00</p>
+        <p><a href="https://www.google.pl/maps/place/Armia+Krajowa+Museum+in+Krak%C3%B3w/@50.0724231,19.948628,15z/data=!4m2!3m1!1s0x0:0xa5751e101b1b22ae?sa=X&ved=0COcBEPwSMBRqFQoTCNiJiLi7gscCFWMscgodLdwKig">Navigate with Google Maps</a></p>
+        <hr/>
+
+        <h2>Polish National Museum</h2>
+        <p>10:00 - 16:00</p>
+        <p><a href="https://www.google.pl/maps/place/National+Museum+in+Krakow/@50.0596773,19.9241276,17.75z/data=!4m2!3m1!1s0x0000000000000000:0x3965c07586ade85a">Navigate with Google Maps</a></p>
+        <hr/>
+
+        <h2>Sukiennice - The Cloth Hall</h2>
+        <p>Gallery of XIX century Polish art</p>
+        <p>10:00 - 18:00</p>
+        <p><a href="https://www.google.pl/maps/place/The+Cloth+Hall/@50.0615744,19.9379734,18.25z/data=!4m2!3m1!1s0x0000000000000000:0xd01f6c2526b37173">Navigate with Google Maps</a></p>
+        <hr/>
+
+        <h2>Museum of Amber</h2>
+        <p>Everyday free</p>
+        <p>09:00 - 21:00</p>
+        <p><a href="https://www.google.pl/maps/place/Muzeum+Bursztynu/@50.062712,19.9380735,15z/data=!4m2!3m1!1s0x0:0xe1a172a494d46c8">Navigate with Google Maps</a></p>
+        <hr/>
+      </div>
+
+    </div>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+      var d = new Date();
+      var weekday = new Array(7);
+      weekday[0]=  "Sunday";
+      weekday[1] = "Monday";
+      weekday[2] = "Tuesday";
+      weekday[3] = "Wednesday";
+      weekday[4] = "Thursday";
+      weekday[5] = "Friday";
+      weekday[6] = "Saturday";
+
+      var current_day = weekday[d.getDay()];
+
+      console.log("Current day: " + current_day);
+      $('#current_day').html(current_day);
+      $('#'+current_day).css('display', 'block');
+    </script>
+  </body>
+</html>
